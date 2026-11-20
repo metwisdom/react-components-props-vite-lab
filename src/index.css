@@ -1,1 +1,94 @@
-@import "tailwindcss";
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #101413;
+	color: #f3f5ef;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.App {
+	min-height: 100vh;
+	padding: 2.5rem 1.25rem;
+	background: #101413;
+	color: #f3f5ef;
+}
+
+.App > div {
+	width: min(100%, 48rem);
+	margin: 0 auto;
+}
+
+header {
+	margin-bottom: 2rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid #718076;
+}
+
+header h1 {
+	margin: 0;
+	font-size: clamp(2rem, 6vw, 3rem);
+}
+
+header p {
+	margin: 0 0 0.5rem;
+	color: #c6d398;
+	font: 600 0.8rem/1.5 sans-serif;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+aside {
+	display: flex;
+	align-items: flex-start;
+	gap: 1.25rem;
+	margin-bottom: 2.5rem;
+	padding: 1.5rem;
+	border: 1px solid #718076;
+}
+
+aside img {
+	width: 4rem;
+	height: 4rem;
+	flex: 0 0 auto;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+aside p,
+article p {
+	margin: 0;
+	line-height: 1.75;
+}
+
+main {
+	display: grid;
+	gap: 1.5rem;
+}
+
+article {
+	padding: 1.5rem;
+	border: 1px solid #718076;
+}
+
+article h3 {
+	margin: 0 0 0.5rem;
+	font-size: 1.5rem;
+}
+
+article small {
+	color: #c6d398;
+	font: 500 0.875rem/1.5 sans-serif;
+}
+
+article p {
+	margin-top: 1rem;
+}
+
+@media (max-width: 34rem) {
+	aside {
+		flex-direction: column;
+	}
+}
